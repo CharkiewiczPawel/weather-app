@@ -1,3 +1,6 @@
+import sun from "../images/weather/sun.png"
+import moon from "../images/weather/moon.png"
+
 
 const CurrentDate: React.FC=()=>{
     
@@ -6,10 +9,10 @@ const CurrentDate: React.FC=()=>{
     const currentHours:String=`Godzina:${data.getHours()}:${data.getMinutes()}`;
 
     const compareData:number=data.getHours();
-    let weatherPicture=("./images/weather/sun.png")
+    let weatherPicture=(sun)
     if(compareData>4&&compareData<22){
-        weatherPicture=("./images/weather/sun.png")
-    }else weatherPicture=("./images/weather/moon.png")
+        weatherPicture=(sun)
+    }else weatherPicture=(moon)
 
     
     

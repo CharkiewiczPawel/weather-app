@@ -1,4 +1,12 @@
 import React, { useState } from "react"
+import clouds from "../images/icons/clouds.png"
+import clear from "../images/icons/clear.png"
+import snow from "../images/icons/snow.png"
+import drizzle from "../images/icons/drizzle.png"
+import misty from "../images/icons/misty.png"
+import thermometer from "../images/icons/thermometer.png"
+import winds from "../images/icons/wind.png"
+import rain from "../images/icons/rain.png"
 
 
 export interface InfoCity {
@@ -42,25 +50,25 @@ const CitySelection: React.FC = () => {
             const skyWeather = currentTheAnswer.weather[0].main
             if (skyWeather === "Clouds") {
                 setTypeOfWeather({ name: "Pochmurnie" });
-                setPictureWeather({ name: "./images/icons/clouds.png" })
+                setPictureWeather({ name: clouds })
             } else if (skyWeather === "Clear") {
                 setTypeOfWeather({ name: "Słonecznie" })
-                setPictureWeather({ name: "./images/icons/clear.png" })
+                setPictureWeather({ name: clear })
             } else if (skyWeather === "Snow") {
                 setTypeOfWeather({ name: "Pada śnieg" })
-                setPictureWeather({ name: "./images/icons/snow.png" })
+                setPictureWeather({ name: snow })
             } else if (skyWeather === "Rain") {
                 setTypeOfWeather({ name: "Pada deszcz" })
-                setPictureWeather({ name: "./images/icons/rain.png" })
+                setPictureWeather({ name: rain })
             } else if (skyWeather === "light intensity drizzle") {
                 setTypeOfWeather({ name: "Intensywna mżawka" })
-                setPictureWeather({ name: "./images/icons/drizzle.png" })
+                setPictureWeather({ name: drizzle })
             } else if (skyWeather === "Drizzle") {
                 setTypeOfWeather({ name: "Mżawka" })
-                setPictureWeather({ name: "./images/icons/drizzle.png" })
+                setPictureWeather({ name: drizzle })
             } else if (skyWeather === "Mist") {
                 setTypeOfWeather({ name: "Mgła" })
-                setPictureWeather({ name: "./images/icons/misty.png" })
+                setPictureWeather({ name: misty })
             } else setTypeOfWeather({ name: "Pogoda nieznana" });
             //wind speed
             setWind({ name: currentTheAnswer.wind.speed })
@@ -79,7 +87,7 @@ const CitySelection: React.FC = () => {
             <div className="weatherBoard">
                 <h1>{city.name}</h1>
                 <div className="temperatureBoard">
-                    <img className="icons" src="./images/icons/thermometer.png" />
+                    <img className="icons" src={thermometer} />
                     <p>{temperature.name}°C</p>
                 </div>
                 <div className="typeOfWeatherBoard">
@@ -87,7 +95,7 @@ const CitySelection: React.FC = () => {
                     <p>{typeOfWeather.name}</p>
                 </div>
                 <div className="windBoard">
-                    <img className="icons" src="./images/icons/wind.png" />
+                    <img className="icons" src={winds} />
                     <p> Wiatr: {wind.name}km/h</p>
                 </div>
 
