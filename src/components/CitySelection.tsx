@@ -30,7 +30,7 @@ const CitySelection: React.FC = () => {
     const [city, setCity] = useState<InfoCity>({ name: "Brak wybranego miasta" })
     const [temperature, setTemperature] = useState<InfoTemperature>({ name: 0 })
     const [typeOfWeather, setTypeOfWeather] = useState<InfoTypeOfWeather>({ name: "nieznana" })
-    const [pictureWeather, setPictureWeather] = useState<InfoPictureWeather>({ name: "./images/icons/clear.png" })
+    const [pictureWeather, setPictureWeather] = useState<InfoPictureWeather>({ name: clear })
     const [wind, setWind] = useState<InfoWind>({ name: 0 })
 
     const handleChangeCity = (e: React.ChangeEvent<HTMLInputElement>) => {
