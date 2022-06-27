@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CharkiewiczPawel/weather-app.git/static/css/main.139c49d5.css",
+    "main.js": "/CharkiewiczPawel/weather-app.git/static/js/main.d7c19378.js",
+    "index.html": "/CharkiewiczPawel/weather-app.git/index.html",
+    "main.139c49d5.css.map": "/CharkiewiczPawel/weather-app.git/static/css/main.139c49d5.css.map",
+    "main.d7c19378.js.map": "/CharkiewiczPawel/weather-app.git/static/js/main.d7c19378.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.139c49d5.css",
+    "static/js/main.d7c19378.js"
+  ]
+}
