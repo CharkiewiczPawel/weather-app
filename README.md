@@ -7,11 +7,11 @@
   </tr>
 </table>
 
-##Built with
--Css
--React.js
--TypeScript
+## Built with
+- Css
+- React.js
+- TypeScript
 
-##Resources udes
--free version of Api with weather: OpenWeather
--images downloaded from: Pixabay
+## Resources used
+- free version of Api with weather: OpenWeather
+- images downloaded from: Pixabay
