@@ -115,47 +115,61 @@ body {
     height: 70px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .withDateBoard {
     margin: 0 auto;
   }
   .withDateBoard .displayWeatherPicture {
-    height: 50px;
+    height: 130px;
     width: auto;
-    margin: 1%;
+    margin: 3%;
   }
   .withDateBoard p {
-    margin: 0.5%;
-    margin-top: 3%;
-    font-size: small;
+    margin: 9%;
+    margin-top: 10%;
+    font-size: large;
   }
 
   .mainBoard input {
-    margin-left: 10px;
+    margin-left: 40%;
     border-radius: 20px;
+    width: 20%;
+    text-align: center;
   }
   .mainBoard .weatherBoard h1 {
-    font-size: small;
-    text-align: left;
+    font-size: xx-large;
+    text-align: center;
   }
   .mainBoard .weatherBoard .temperatureBoard {
-    margin: 1px;
-    margin-top: 2%;
+    margin: 5%;
+    margin-top: 5%;
   }
   .mainBoard .weatherBoard .temperatureBoard img {
-    height: 30px;
+    height: 100px;
+  }
+  .mainBoard .weatherBoard .temperatureBoard p {
+    margin: auto 2%;
+    font-weight: bolder;
   }
   .mainBoard .weatherBoard .typeOfWeatherBoard {
-    margin: 1px;
+    margin: 2%;
   }
   .mainBoard .weatherBoard .typeOfWeatherBoard img {
-    height: 30px;
+    height: 100px;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard p {
+    margin: auto 2%;
+    font-weight: bolder;
   }
   .mainBoard .weatherBoard .windBoard {
-    margin: 1px;
-    margin-top: 0%;
+    margin: 2%;
+    margin-top: 5%;
   }
   .mainBoard .weatherBoard .windBoard img {
-    height: 30px;
+    height: 100px;
+  }
+  .mainBoard .weatherBoard .windBoard p {
+    margin: auto 2%;
+    font-weight: bolder;
   }
 }/*# sourceMappingURL=style.css.map */

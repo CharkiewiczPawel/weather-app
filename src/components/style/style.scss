@@ -1,186 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-$breakPoints:("small":375px, "medium":768px, "large":1024px,);
-@mixin breakPoint($val){
-  @media(min-width:map-get($map:$breakPoints,$key:$val)){
+$breakPoints: (
+  "small":375px,
+  "medium":768px,
+  "large":1023px,
+);
+
+@mixin breakPoint($val) {
+  @media(min-width:map-get($map: $breakPoints, $key: $val)) {
     @content;
   }
 }
 
-
-body{
-    margin:0;
-    padding:0; 
-    font-family: 'Roboto', sans-serif;
-    background-color: #B3E5FC;   
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #B3E5FC;
 }
 
-.withDateBoard{
+.withDateBoard {
   display: flex;
-  p{
-    text-align: center;      
+
+  p {
+    text-align: center;
   }
- }
- .mainBoard{
-  display: block;  
-   input{
-      border: 2px solid black;
-    }  
-    button{
-      background-color:#76FF03;
-      border: 2px solid #64DD17;
-      border-radius: 20px;
+}
+
+.mainBoard {
+  display: block;
+
+  input {
+    border: 2px solid black;
+  }
+
+  button {
+    background-color: #76FF03;
+    border: 2px solid #64DD17;
+    border-radius: 20px;
+  }
+
+  .weatherBoard {
+    h1 {
+      text-align: center;
     }
-    .weatherBoard{
-      h1{
-         text-align: center;
-      }
-      .temperatureBoard{
-        display: flex;
-      }
-      .typeOfWeatherBoard{
-        display: flex;
-      }
-      .windBoard{
-        display: flex;
-      }
-    }  
- }
+
+    .temperatureBoard {
+      display: flex;
+    }
+
+    .typeOfWeatherBoard {
+      display: flex;
+    }
+
+    .windBoard {
+      display: flex;
+    }
+  }
+}
 
 
-  @include breakPoint(small){
-   .withDateBoard{
+@include breakPoint(small) {
+  .withDateBoard {
     margin: 0 auto;
-    .displayWeatherPicture{
+
+    .displayWeatherPicture {
       height: 100px;
       width: auto;
-      margin:1%;
+      margin: 1%;
     }
-    p{
-      margin:2%;
-      margin-top: 10%;     
+
+    p {
+      margin: 2%;
+      margin-top: 10%;
     }
-   }
-   .mainBoard{    
-     input{
-        margin-left:70px;
-        border-radius: 20px;
-      }  
-      .weatherBoard{
-        .temperatureBoard{          
-          margin: 3%;
-          margin-top: 14%;
-          img{
-            height: 70px;
-          }
-        }
-        .typeOfWeatherBoard{
-          margin: 1%;
-          img{
-            height:70px;
-          }
-        }
-        .windBoard{
-          margin: 1%;
-          margin-top: 2%;
-          img{
-            height: 70px;
-          }
-        }
-      }  
-   }
-  }
-  @include breakPoint(medium){
-    .withDateBoard{
-      margin: 0 auto;
-      .displayWeatherPicture{
-        height: 150px;
-        width: auto;
-        margin:1%;
-      }
-      p{
-        margin:5%;
-        margin-top: 10%;     
-      }
-     }
-     .mainBoard{    
-       input{
-          margin-left:300px;
-          border-radius: 20px;
-        }  
-        .weatherBoard{
-          .temperatureBoard{          
-            margin: 3%;
-            margin-top: 14%;
-            img{
-              height: 70px;
-            }
-          }
-          .typeOfWeatherBoard{
-            margin: 1%;
-            img{
-              height:70px;
-            }
-          }
-          .windBoard{
-            margin: 1%;
-            margin-top: 2%;
-            img{
-              height: 70px;
-            }
-          }
-        }  
-     }
   }
 
-  @include breakPoint(large){
-    .withDateBoard{
-      margin: 0 auto;
-      .displayWeatherPicture{
-        height: 50px;
-        width: auto;
-        margin:1%;
+  .mainBoard {
+    input {
+      margin-left: 70px;
+      border-radius: 20px;
+    }
+
+    .weatherBoard {
+      .temperatureBoard {
+        margin: 3%;
+        margin-top: 14%;
+
+        img {
+          height: 70px;
+        }
       }
-      p{
-        margin:0.5%;
-        margin-top: 3%;  
-        font-size: small;   
+
+      .typeOfWeatherBoard {
+        margin: 1%;
+
+        img {
+          height: 70px;
+        }
       }
-     }
-     .mainBoard{    
-       input{
-          margin-left:10px;
-          border-radius: 20px;
-        }  
-        .weatherBoard{
-          h1{
-            font-size: small;
-            text-align: left;
-         }
-          .temperatureBoard{          
-            margin: 1px;
-            margin-top:2%;
-            img{
-              height: 30px;
-            }
-          }
-          .typeOfWeatherBoard{
-            margin: 1px;
-            img{
-              height:30px;
-            }
-          }
-          .windBoard{
-            margin: 1px;
-            margin-top: 0%;
-            img{
-              height: 30px;
-            }
-          }
-        }  
-     }
+
+      .windBoard {
+        margin: 1%;
+        margin-top: 2%;
+
+        img {
+          height: 70px;
+        }
+      }
+    }
   }
-  
-  
-  
- 
+}
+
+@include breakPoint(medium) {
+  .withDateBoard {
+    margin: 0 auto;
+
+    .displayWeatherPicture {
+      height: 150px;
+      width: auto;
+      margin: 1%;
+    }
+
+    p {
+      margin: 5%;
+      margin-top: 10%;
+    }
+  }
+
+  .mainBoard {
+    input {
+      margin-left: 300px;
+      border-radius: 20px;
+    }
+
+    .weatherBoard {
+      .temperatureBoard {
+        margin: 3%;
+        margin-top: 14%;
+
+        img {
+          height: 70px;
+        }
+      }
+
+      .typeOfWeatherBoard {
+        margin: 1%;
+
+        img {
+          height: 70px;
+        }
+      }
+
+      .windBoard {
+        margin: 1%;
+        margin-top: 2%;
+
+        img {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@include breakPoint(large) {
+  .withDateBoard {
+    margin: 0 auto;
+
+    .displayWeatherPicture {
+      height: 130px;
+      width: auto;
+      margin: 3%;
+    }
+
+    p {
+      margin: 9%;
+      margin-top: 10%;
+      font-size: large;
+    }
+  }
+
+  .mainBoard {
+    input {
+      margin-left: 40%;
+      border-radius: 20px;
+      width: 20%;
+      text-align: center;
+    }
+
+    .weatherBoard {
+      h1 {
+        font-size: xx-large;
+        text-align: center;
+      }
+
+      .temperatureBoard {
+        margin: 5%;
+        margin-top: 5%;
+
+        img {
+          height: 100px;
+        }
+
+        p {
+          margin: auto 2%;
+          font-weight: bolder;
+        }
+      }
+
+      .typeOfWeatherBoard {
+        margin: 2%;
+
+        img {
+          height: 100px;
+        }
+
+        p {
+          margin: auto 2%;
+          font-weight: bolder;
+        }
+      }
+
+      .windBoard {
+        margin: 2%;
+        margin-top: 5%;
+
+        img {
+          height: 100px;
+        }
+
+        p {
+          margin: auto 2%;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
