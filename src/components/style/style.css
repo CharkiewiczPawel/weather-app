@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #B3E5FC;
+}
+
+.withDateBoard {
+  display: flex;
+}
+.withDateBoard p {
+  text-align: center;
+}
+
+.mainBoard {
+  display: block;
+}
+.mainBoard input {
+  border: 2px solid black;
+}
+.mainBoard button {
+  background-color: #76FF03;
+  border: 2px solid #64DD17;
+  border-radius: 20px;
+}
+.mainBoard .weatherBoard h1 {
+  text-align: center;
+}
+.mainBoard .weatherBoard .temperatureBoard {
+  display: flex;
+}
+.mainBoard .weatherBoard .typeOfWeatherBoard {
+  display: flex;
+}
+.mainBoard .weatherBoard .windBoard {
+  display: flex;
+}
+
+@media (min-width: 375px) {
+  .withDateBoard {
+    margin: 0 auto;
+  }
+  .withDateBoard .displayWeatherPicture {
+    height: 100px;
+    width: auto;
+    margin: 1%;
+  }
+  .withDateBoard p {
+    margin: 2%;
+    margin-top: 10%;
+  }
+
+  .mainBoard input {
+    margin-left: 70px;
+    border-radius: 20px;
+  }
+  .mainBoard .weatherBoard .temperatureBoard {
+    margin: 3%;
+    margin-top: 14%;
+  }
+  .mainBoard .weatherBoard .temperatureBoard img {
+    height: 70px;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard {
+    margin: 1%;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard img {
+    height: 70px;
+  }
+  .mainBoard .weatherBoard .windBoard {
+    margin: 1%;
+    margin-top: 2%;
+  }
+  .mainBoard .weatherBoard .windBoard img {
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .withDateBoard {
+    margin: 0 auto;
+  }
+  .withDateBoard .displayWeatherPicture {
+    height: 150px;
+    width: auto;
+    margin: 1%;
+  }
+  .withDateBoard p {
+    margin: 5%;
+    margin-top: 10%;
+  }
+
+  .mainBoard input {
+    margin-left: 300px;
+    border-radius: 20px;
+  }
+  .mainBoard .weatherBoard .temperatureBoard {
+    margin: 3%;
+    margin-top: 14%;
+  }
+  .mainBoard .weatherBoard .temperatureBoard img {
+    height: 70px;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard {
+    margin: 1%;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard img {
+    height: 70px;
+  }
+  .mainBoard .weatherBoard .windBoard {
+    margin: 1%;
+    margin-top: 2%;
+  }
+  .mainBoard .weatherBoard .windBoard img {
+    height: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .withDateBoard {
+    margin: 0 auto;
+  }
+  .withDateBoard .displayWeatherPicture {
+    height: 50px;
+    width: auto;
+    margin: 1%;
+  }
+  .withDateBoard p {
+    margin: 0.5%;
+    margin-top: 3%;
+    font-size: small;
+  }
+
+  .mainBoard input {
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  .mainBoard .weatherBoard h1 {
+    font-size: small;
+    text-align: left;
+  }
+  .mainBoard .weatherBoard .temperatureBoard {
+    margin: 1px;
+    margin-top: 2%;
+  }
+  .mainBoard .weatherBoard .temperatureBoard img {
+    height: 30px;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard {
+    margin: 1px;
+  }
+  .mainBoard .weatherBoard .typeOfWeatherBoard img {
+    height: 30px;
+  }
+  .mainBoard .weatherBoard .windBoard {
+    margin: 1px;
+    margin-top: 0%;
+  }
+  .mainBoard .weatherBoard .windBoard img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

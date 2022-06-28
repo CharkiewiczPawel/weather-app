@@ -81,9 +81,9 @@ const CitySelection: React.FC = () => {
     }
 
     return (
-        <div>
-            <input type="text" onChange={handleChangeCity} placeholder={city.name} />
-            <button onClick={() => currentWeatcherApi()}>Sprawdź</button>
+        <div className="mainBoard">               
+                <input type="text" onChange={handleChangeCity} placeholder={city.name} />
+                <button onClick={() => currentWeatcherApi()}>Sprawdź</button>                
             <div className="weatherBoard">
                 <h1>{city.name}</h1>
                 <div className="temperatureBoard">
