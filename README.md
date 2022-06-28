@@ -9,6 +9,7 @@
 
 ## Built with
 - Css
+- Scss
 - React.js
 - TypeScript
 
