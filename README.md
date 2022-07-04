@@ -1,3 +1,5 @@
+![Zdjęcie pogody](https://user-images.githubusercontent.com/92982042/177195884-a566c9cb-167c-4946-ae20-3936ec0a2e0b.PNG)
+
 ## About the weather-app
 <table>
   <tr>
