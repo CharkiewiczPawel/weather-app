@@ -125,16 +125,21 @@ body {
     margin: 3%;
   }
   .withDateBoard p {
-    margin: 9%;
-    margin-top: 10%;
-    font-size: large;
+    margin-left: 4%;
+    margin-top: 4%;
+    font-size: xx-large;
   }
 
   .mainBoard input {
     margin-left: 40%;
     border-radius: 20px;
+    font-size: large;
     width: 20%;
+    height: 45px;
     text-align: center;
+  }
+  .mainBoard button {
+    height: 45px;
   }
   .mainBoard .weatherBoard h1 {
     font-size: xx-large;
@@ -142,7 +147,7 @@ body {
   }
   .mainBoard .weatherBoard .temperatureBoard {
     margin: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   .mainBoard .weatherBoard .temperatureBoard img {
     height: 100px;

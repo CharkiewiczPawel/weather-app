@@ -6,9 +6,7 @@ const CurrentDate: React.FC = () => {
 
   const data: Date = new Date();
   const todaysDate: String = `Data:${data.getDate()}.${data.getMonth() + 1}.${data.getFullYear()}`;
-  let currentHours: String
-  if (data.getMinutes() < 10) { currentHours = `Godzina:${data.getHours()}:0${data.getMinutes()}` }
-  else { currentHours = `Godzina:${data.getHours()}:${data.getMinutes()}` }
+
 
 
   const compareData: number = data.getHours();
@@ -23,7 +21,6 @@ const CurrentDate: React.FC = () => {
     <div className="withDateBoard">
       <img className="displayWeatherPicture" src={weatherPicture} />
       <p>{todaysDate}</p>
-      <p>{currentHours}</p>
     </div>
   )
 }

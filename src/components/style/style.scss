@@ -175,9 +175,9 @@ body {
     }
 
     p {
-      margin: 9%;
-      margin-top: 10%;
-      font-size: large;
+      margin-left: 4%;
+      margin-top: 4%;
+      font-size: xx-large;
     }
   }
 
@@ -185,8 +185,14 @@ body {
     input {
       margin-left: 40%;
       border-radius: 20px;
+      font-size: large;
       width: 20%;
+      height: 45px;
       text-align: center;
+    }
+
+    button {
+      height: 45px
     }
 
     .weatherBoard {
@@ -197,7 +203,7 @@ body {
 
       .temperatureBoard {
         margin: 5%;
-        margin-top: 5%;
+        margin-top: 3%;
 
         img {
           height: 100px;
